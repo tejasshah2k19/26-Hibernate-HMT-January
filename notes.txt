@@ -1,0 +1,12 @@
+entity ->
+		firstName lastName email password address createdAt : LocalDate 
+		getters setters 
+		
+create folder repository ->	
+				create interface inside , UserRepository 
+					thant extends JpaRepository<T,ID> 
+					
+controller -> UserController -> 
+
+	
+		
