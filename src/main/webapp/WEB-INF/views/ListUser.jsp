@@ -15,12 +15,19 @@
 		<th>FirstName</th>
 		<th>LastName</th>
 		<th>Email</th>
+		<th>Action</th>
 	</tr>
 	<c:forEach items="${users}" var="u">
 		<tr>
 			<td>${u.firstName }</td>
 			<td>${u.lastName }</td>
 			<td>${u.email }</td>
+			<td><a href="deleteUser?userId=${u.userId}">Delete</a>
+			|
+			<a href="viewUser?userId=${u.userId}">View</a>
+			|
+			<a href="editUser?userId=${u.userId}">Edit</a>
+			</td>
 		</tr>
 	</c:forEach>
 </table>
